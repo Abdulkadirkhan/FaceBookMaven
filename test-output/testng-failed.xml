@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Learning]">
+  <listeners>
+    <listener class-name="ErrorCollectors.TestListenerAdapter"/>
+  </listeners>
+  <test name="Login test(failed)">
+    <classes>
+      <class name="testcases.SearchFriendTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.SearchFriendTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="doLoginTest"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.UploadaPicTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.UploadaPicTest -->
+    </classes>
+  </test> <!-- Login test(failed) -->
+  <test name="Search a Friend test(failed)">
+    <classes>
+      <class name="testcases.SearchFriendTest">
+        <methods>
+          <include name="isSkip"/>
+          <include name="searchforfriend" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.SearchFriendTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.UploadaPicTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.UploadaPicTest -->
+    </classes>
+  </test> <!-- Search a Friend test(failed) -->
+  <test name="Upload a pic test(failed)">
+    <classes>
+      <class name="testcases.SearchFriendTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.SearchFriendTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.UploadaPicTest">
+        <methods>
+          <include name="uploadPic"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testcases.UploadaPicTest -->
+    </classes>
+  </test> <!-- Upload a pic test(failed) -->
+</suite> <!-- Failed suite [TestNG Learning] -->

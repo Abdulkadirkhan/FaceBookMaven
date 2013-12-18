@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestNG_Learning">
+              <span class="suite-name border-failed">TestNG Learning</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestNG_Learning">
+                    <span>C:\Abdul kadir khan1\Selenium Architecture\ReferenceCodeClassesByRaman\Week2\FacebookMaven\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestNG_Learning">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestNG_Learning">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestNG_Learning">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestNG_Learning">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestNG_Learning">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestNG_Learning">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 2 failed,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNG_Learning" class="hide-methods failed suite-TestNG_Learning"> (hide)</a> <!-- hide-methods failed suite-TestNG_Learning -->
+                      <a href="#" panel-name="suite-TestNG_Learning" class="show-methods failed suite-TestNG_Learning"> (show)</a> <!-- show-methods failed suite-TestNG_Learning -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNG_Learning">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Learning" title="testcases.LoginTest" hash-for-method="doLoginTest({password=selenium1234, runmode=Y, title=google.com, username=seleniumcoaching@gmail.com})">doLoginTest({password=selenium1234, runmode=Y, title=google.com, username=seleniumcoaching@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Learning" title="testcases.SearchFriendTest" hash-for-method="searchforfriend({runmode=Y, friendname=Piyush Sharma})">searchforfriend({runmode=Y, friendname=Piyush Sharma})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNG_Learning -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNG_Learning" class="hide-methods skipped suite-TestNG_Learning"> (hide)</a> <!-- hide-methods skipped suite-TestNG_Learning -->
+                      <a href="#" panel-name="suite-TestNG_Learning" class="show-methods skipped suite-TestNG_Learning"> (show)</a> <!-- show-methods skipped suite-TestNG_Learning -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNG_Learning">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Learning" title="testcases.UploadaPicTest" hash-for-method="uploadPic({runmode=Y, path=c:\\screenshot\\abcd.jpg})">uploadPic({runmode=Y, path=c:\\screenshot\\abcd.jpg})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNG_Learning -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNG_Learning" class="panel TestNG_Learning">
+          <div class="suite-TestNG_Learning-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.SearchFriendTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchforfriend({runmode=Y, friendname=Piyush Sharma})">
+                  </a> <!-- searchforfriend({runmode=Y, friendname=Piyush Sharma}) -->
+                  <span class="method-name">searchforfriend</span>
+                  <span class="parameters">({runmode=Y, friendname=Piyush Sharma})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Home Page Element not found expected [true] but found [false]
+	at pages.topNavigation.gotoHome(topNavigation.java:23)
+	at testcases.SearchFriendTest.searchforfriend(SearchFriendTest.java:40)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Learning-class-failed -->
+          <div class="suite-TestNG_Learning-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLoginTest({password=selenium1234, runmode=Y, title=google.com, username=seleniumcoaching@gmail.com})">
+                  </a> <!-- doLoginTest({password=selenium1234, runmode=Y, title=google.com, username=seleniumcoaching@gmail.com}) -->
+                  <span class="method-name">doLoginTest</span>
+                  <span class="parameters">({password=selenium1234, runmode=Y, title=google.com, username=seleniumcoaching@gmail.com})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [google.com] but found [Welcome to Facebook - Log In, Sign Up or Learn More]
+	at ErrorCollectors.ErrorCollector.assertEquals(ErrorCollector.java:39)
+	at ErrorCollectors.ErrorCollector.verifyEquals(ErrorCollector.java:92)
+	at testcases.LoginTest.doLoginTest(LoginTest.java:40)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Learning-class-failed -->
+          <div class="suite-TestNG_Learning-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.UploadaPicTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadPic({runmode=Y, path=c:\\screenshot\\abcd.jpg})">
+                  </a> <!-- uploadPic({runmode=Y, path=c:\\screenshot\\abcd.jpg}) -->
+                  <span class="method-name">uploadPic</span>
+                  <span class="parameters">({runmode=Y, path=c:\\screenshot\\abcd.jpg})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Learning-class-skipped -->
+        </div> <!-- panel TestNG_Learning -->
+        <div panel-name="test-xml-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Abdul kadir khan1\Selenium Architecture\ReferenceCodeClassesByRaman\Week2\FacebookMaven\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestNG Learning&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ErrorCollectors.TestListenerAdapter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Login test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login test --&gt;
+  &lt;test name=&quot;Search a Friend test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.SearchFriendTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search a Friend test --&gt;
+  &lt;test name=&quot;Upload a pic test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.UploadaPicTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Upload a pic test --&gt;
+&lt;/suite&gt; &lt;!-- TestNG Learning --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Search a Friend test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Upload a pic test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNG_Learning');
+function tableData_TestNG_Learning() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'doLoginTest')
+data.setCell(0, 2, 'testcases.LoginTest')
+data.setCell(0, 3, 302154);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchforfriend')
+data.setCell(1, 2, 'testcases.SearchFriendTest')
+data.setCell(1, 3, 1005);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'uploadPic')
+data.setCell(2, 2, 'testcases.UploadaPicTest')
+data.setCell(2, 3, 2);
+window.suiteTableData['TestNG_Learning']= { tableData: data, tableDiv: 'times-div-TestNG_Learning'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-TestNG_Learning">
+              </div> <!-- times-div-TestNG_Learning -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">isSkip</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doLoginTest({password=selenium1234, runmode=Y, title=google.com, username=seleniumcoaching@gmail.com})</span>
+                <span class="method-start">2978 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SearchFriendTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">isSkip</span>
+                <span class="method-start">305375 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchforfriend({runmode=Y, friendname=Piyush Sharma})</span>
+                <span class="method-start">305381 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UploadaPicTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">isSkip</span>
+                <span class="method-start">306423 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">uploadPic({runmode=Y, path=c:\\screenshot\\abcd.jpg})</span>
+                <span class="method-start">306429 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
